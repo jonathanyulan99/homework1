@@ -35,7 +35,7 @@ body {
 
 .loading-text {
     font-size: 50px;
-    color: white;
+    color: black;
     grid-column: col4-start/col5-start;
     grid-row: row2-start/row2-end;
     align-self: center;
@@ -274,4 +274,15 @@ div#header-image-2 {
 span.red {
     color: red;
     font: larger;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+    font-size: larger;
+    color: yellow;
 }

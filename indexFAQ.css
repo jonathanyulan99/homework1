@@ -15,7 +15,6 @@
         background-image: linear-gradient(90deg, #7d5fff, #7158e2);
         display: flex;
         z-index: -1;
-        margin-top: 100px;
     }
     /*CSS for all indexBronx.html page*/
     
@@ -34,7 +33,7 @@
     
     .loading-text {
         font-size: 50px;
-        color: white;
+        color: black;
         grid-column: col4-start/col5-start;
         grid-row: row2-start/row2-end;
         align-self: center;
@@ -136,7 +135,7 @@
         height: 50px;
         width: 70px;
         transition: width ease 0.3s;
-        margin-top: 60px;
+        margin-top: 30px;
     }
     
     div.search button#search-btn {
@@ -149,7 +148,7 @@
         height: 50px;
         width: 70px;
         transition: transform 0.3s ease;
-        margin-top: 60px;
+        margin-top: 30px;
         /*This sets the position of our search button on top of our search input*/
         position: absolute;
     }
@@ -295,13 +294,13 @@
     }
     /*Table CSS was inspired by http://blog.justinwoodie.com/2013/08/fancy-html-table-styled-with-css.html#*/
     
-    a:link {
-        color: #000000;
+    table a:link {
+        color: black;
     }
     /* unvisited link */
     
-    a:visited {
-        color: #000000;
+    table a:visited {
+        color: black;
     }
     /* visited link */
     
@@ -386,4 +385,15 @@
         background: -o-linear-gradient(top, #666666, #222222);
         background: linear-gradient(top, #666666, #222222);
         color: #81d50d;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    a:hover {
+        cursor: pointer;
+        font-size: larger;
+        color: yellow;
     }

@@ -275,3 +275,14 @@ span.red {
     color: red;
     font: larger;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    cursor: pointer;
+    font-size: larger;
+    color: yellow;
+}

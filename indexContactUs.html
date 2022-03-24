@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./indexContactUs.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/1985be3ec0.js" crossorigin="anonymous"></script>
     <title>Contact Us</title>
@@ -16,64 +16,84 @@
         <div class="circle-container">
             <div class="circle">
                 <button id="close">
-                    <!--Icon from Font Awesome-->
-                    <i class="fas fa-times"></i>
-                </button>
+            <!--Icon from Font Awesome-->
+            <i class="fas fa-times"></i>
+          </button>
                 <button id="open">
-                    <i class="fas fa-bars"></i>
-                </button>
+            <i class="fas fa-bars"></i>
+          </button>
             </div>
         </div>
         <div class="header-image" id="header-image-1"></div>
         <div class="header-image" id="header-image-2"></div>
         <div class="search">
-            <input type="text" class="input" placeholder="Search..">
+            <input type="text" class="input" placeholder="Search.." />
             <button class="btn" id="search-btn">
-                <i class="fas fa-search "></i>
-            </button>
+          <i class="fas fa-search"></i>
+        </button>
         </div>
         <div class="loading-text">0%</div>
         <section class="background" id="section-background">
             <div class="content">
-                <h1 class="section-background-heading" id="section-background-heading-h1"><span id="section-background-heading-span">Contact Us</span></h1>
+                <h1 class="section-background-heading" id="section-background-heading-h1 ">
+                    <span id="section-background-heading-span ">Contact Us</span>
+                </h1>
                 <form class="form" action=" action_page.php">
                     <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name.. ">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." />
 
                     <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name.. ">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
 
                     <label for="nyBorough">New York Borough</label>
-                    <select id="borough" name="nyBorough">
-                        <option value="Bronx">Bronx</option>
-                        <option value="Brooklyn">Brooklyn</option>
-                        <option value="Manhatten">Manhatten</option>
-                        <option value="Queens">Queens</option>
-                        <option value="Staten-Island">Staten Island</option>
-                    </select>
+                    <select id="borough" name="nyBorough" title="boroughs">
+              <option value="Bronx">Bronx</option>
+              <option value="Brooklyn">Brooklyn</option>
+              <option value="Manhatten">Manhatten</option>
+              <option value="Queens">Queens</option>
+              <option value="Staten-Island">Staten Island</option>
+            </select>
 
-                    <label for="subject ">Subject</label>
-                    <textarea id="subject " name="subject " placeholder="Let Us Address Your Special Concerns.. " style="height:200px "></textarea>
-                    <input type="submit" value="Submit" id="submit">
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Please Notify Us Here If You Require a Special Waste Pickup.." style="height: 200px"></textarea>
+                    <input type="submit" value="Submit" id="submit" />
                 </form>
             </div>
         </section>
     </div>
     <nav>
-        <ul class="nav-bar ">
-            <li><i class="fas fa-home "></i><a href='./index.html'>Home</a></li>
-            <li><i class="fas fa-user-alt " aria-hidden="true "></i><a href='./indexFAQ.html'>FAQ</a></li>
-            <li><i class="fa fa-hashtag " aria-hidden="true "></i><a href='./indexBronx.html'>Bronx</a></li>
-            <li><i class="fa fa-hashtag " aria-hidden="true "></i><a href='./indexBrooklyn.html'>Brooklyn</a></li>
-            <li><i class="fa fa-hashtag " aria-hidden="true "></i><a href='./indexManhatten.html'>Manhattaan</a></li>
-            <li><i class="fa fa-hashtag " aria-hidden="true "></i><a href='./indexQueens.html'>Queens</a></li>
-            <li><i class="fa fa-hashtag " aria-hidden="true "></i><a href='./indexStatenIsland.html'>Staten Island</a>
-            </li>
-            <li><i class="fa fa-hashtag " aria-hidden="true "></i><a href='./indexContactUs.html'>Contact Us</a></li>
-        </ul>
+        <ul class="nav-bar">
+            <li><i class="fas fa-home"></i><a href="./index.html">Home</a></li>
+            <li>
+                <i class="fas fa-user-alt" aria-hidden="true "></i
+          ><a href="./indexFAQ.html">FAQ</a>
+        </li>
+        <li>
+          <i class="fa fa-hashtag" aria-hidden="true "></i
+          ><a href="./indexBronx.html">Bronx</a>
+        </li>
+        <li>
+          <i class="fa fa-hashtag" aria-hidden="true "></i
+          ><a href="./indexBrooklyn.html">Brooklyn</a>
+        </li>
+        <li>
+          <i class="fa fa-hashtag" aria-hidden="true "></i
+          ><a href="./indexManhatten.html">Manhattaan</a>
+        </li>
+        <li>
+          <i class="fa fa-hashtag" aria-hidden="true "></i
+          ><a href="./indexQueens.html">Queens</a>
+        </li>
+        <li>
+          <i class="fa fa-hashtag" aria-hidden="true "></i
+          ><a href="./indexStatenIsland.html">Staten Island</a>
+        </li>
+        <li>
+          <i class="fa fa-hashtag" aria-hidden="true "></i
+          ><a href="./indexContactUs.html">Contact Us</a>
+        </li>
+      </ul>
     </nav>
-    <script src="./indexBronx.js "></script>
-
-</body>
-
+    <script src="./indexBronx.js"></script>
+  </body>
 </html>

@@ -38,7 +38,7 @@ function blurring() {
     //we need to map this 
     //referenced the stackOverFlow to map a range of numbers to another range of numbers
     // o to 100 from 100 to 0
-    loadText.style.opacity = scaler(load, 0, 100, 1, 0);
+    loadText.style.opacity = scaler(load, 0, 100, 30, 0);
     backGround.style.filter = `blur(${scaler(load,0,100,30,0)})`
 }
 

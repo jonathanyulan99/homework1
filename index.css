@@ -227,7 +227,7 @@
     div.flex-item.active#flex-item-about-us,
     div.flex-item.active#flex-item-faq {
         flex: 5;
-        min-width: 50%;
+        border-radius: 35%;
     }
     
     div.flex-item.active h2 {
@@ -235,36 +235,42 @@
         text-decoration: underline;
         /* opacity .3s takes ease-in .4s delay*/
         transition: opacity 0.2s ease-in;
-        border-radius: 40px;
     }
     /*Selectors For Photos*/
     
     div#flex-item-bronx {
         background-image: url('./assets/Bronx_1.jpg');
+        border-radius: 50px;
     }
     
     div#flex-item-brooklyn {
         background-image: url('./assets/Brooklyn_1.jpg');
+        border-radius: 50px;
     }
     
     div#flex-item-manhattan {
         background-image: url('./assets/Manhattan_1.jpg');
+        border-radius: 50px;
     }
     
     div#flex-item-queens {
         background-image: url('./assets/Queens_1.jpg');
+        border-radius: 50px;
     }
     
     div#flex-item-staten-island {
         background-image: url('./assets/Staten_Island_1.jpg');
+        border-radius: 50px;
     }
     
     div#flex-item-about-us {
         background-image: url('./assets/faq.jpg');
+        border-radius: 50px;
     }
     
     div#flex-item-faq {
         background-image: url('./assets/waste_2.jpg');
+        border-radius: 50px;
     }
     
     h1#main-heading {
