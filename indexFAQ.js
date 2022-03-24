@@ -19,12 +19,12 @@ buttonSearch.addEventListener('click', () => {
 
 //Code for only indexBronx.js
 const loadText = document.querySelector('.loading-text');
-const backGround = document.querySelector('.background');
+const backGround = document.getElementById('section-background');
 
 let load = 0;
 
 // .setInterval is (function,ms duration delay)
-let int = setInterval(blurring, 30);
+let int = setInterval(blurring, 30)
 
 function blurring() {
     load++;
@@ -34,14 +34,14 @@ function blurring() {
     }
 
     loadText.innerText = `${load}%`;
-    //we want it to go from opacity 1 to 0
-    //we need to map this
+    //we want it to go from opacity 1 to 0 
+    //we need to map this 
     //referenced the stackOverFlow to map a range of numbers to another range of numbers
     // o to 100 from 100 to 0
     loadText.style.opacity = scaler(load, 0, 100, 1, 0);
-    backGround.style.filter = `blur(${scaler(load, 0, 100, 30, 0)})`;
+    backGround.style.filter = `blur(${scaler(load,0,100,30,0)})`
 }
 
 const scaler = (num, in_min, in_max, out_min, out_max) => {
-    return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
-};
+    return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}

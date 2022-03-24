@@ -2,53 +2,195 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./indexFAQ.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/1985be3ec0.js" crossorigin="anonymous"></script>
     <title>FAQ</title>
 </head>
 
 <body>
-    <section class="background"></section>
     <div class="container-all">
         <div class="circle-container">
             <div class="circle">
                 <button id="close">
-          <!--Icon from Font Awesome-->
-          <i class="fas fa-times"></i>
-        </button>
+            <!--Icon from Font Awesome-->
+            <i class="fas fa-times"></i>
+          </button>
                 <button id="open">
-          <i class="fas fa-bars"></i>
-        </button>
+            <i class="fas fa-bars"></i>
+          </button>
             </div>
         </div>
         <div class="header-image" id="header-image-1"></div>
         <div class="header-image" id="header-image-2"></div>
         <div class="search">
-            <input type="text" class="input" placeholder="Search..">
+            <input type="text" class="input" placeholder="Search.." id="search-button-div" />
             <button class="btn" id="search-btn">
-                <i class="fas fa-search "></i>
-            </button>
+          <i class="fas fa-search"></i>
+        </button>
         </div>
         <div class="loading-text">0%</div>
-    </div>
+        <section class="background" id="section-background">
+            <div class="content">
+                <h1 id="section-background-heading-h1">
+                    <span class="section-background-heading" id="section-background-heading-span">FAQ</span
+            >
+          </h1>
+          <h2 class="section-background-headlines-h2">
+            <span
+              class="section-background-heading"
+              id="section-background-headlines-span"
+              >Most Commonly Asked Questions</span
+            >
+          </h2>
+          <h3 class="section-background-headlines-h3">
+            <span class="section-background-heading"
+              >When does the garbage truck come for pickup in my area?</span
+            >
+          </h3>
+          <p>
+            The day and time of trash pickup in your area will depend on a
+            number of factors. As a BT&S customer, or New York resident you can
+            easily access your pickup schedule and view the day for your
+            specific borough listed below in your My BT&S account.
+          </p>
+          <h3 class="section-background-headlines-h3">
+            <span class="section-background-heading"
+              >What items and materials are recylable</span
+            >
+          </h3>
+          <p>
+            THe following are categories of items that are considered
+            recyclable...
+          </p>
+          <ol class="ordered-list">
+            <li id="ordered-list-1"><span>Bottles and Cans</span></li>
+                    <li id="ordered-list-2"><span>Paper</span></li>
+                    <li id="ordered-list-3"><span>Cardboard</span></li>
+                    </ol>
+                    <h3 class="section-background-headlines-h3">
+                        <span class="section-background-heading">How do I dispose of a used mattress or old toilet? Can I schedule
+              for bulky pickup?</span
+            >
+          </h3>
+          <p>
+            "Bulky" and large-item pickups are available to certain Waste
+            Management customers. Terms, fees and conditions may apply. BT&S
+            customers can easily schedule bulky pickups from their My BT&S
+            account. Items considered bulky include: Appliances, TVs and
+            electronics Household furniture Scrap metal Tires — up to 4 car or
+            light-truck tires separated from rims Yard trimmings — bundled for
+            composting
+          </p>
+          <h3 class="section-background-headlines-h3">
+            <span class="section-background-heading"
+              >When do I put my carts or bins out for weekly curbside
+              pickup?</span
+            >
+          </h3>
+          <p>
+            Wheel your carts to the street and place them curbside by 9 a.m. on
+            your collection day. Do not overload carts; the lids must close
+            completely. Overage fees will only apply to special management waste
+            orders, our regular servicing will be free of charge(applies only to
+            NY residents). Make sure that all trash and debris is in the cart.
+            Garbage or waste left beside carts may not be collected.
+          </p>
+          <h3 class="section-background-headlines-h3">
+            <span class="section-background-heading"
+              >When do I put my carts or bins for special curbside pickup?</span
+            >
+          </h3>
+          <p>
+            These orders will only be picked up if you
+            <span
+              ><a href="./indexContactUs.html" id="contact-us-link"
+                >Contact Us!</a
+              ></span
+            >
+            If you have contacted us for special waste handeling then you can
+            place it in the same position as your regular pickup schedule.
+          </p>
+          <h3 class="section-background-headlines-h3">
+            <span class="section-background-heading"
+              >How Can I get in Contact With You?</span
+            >
+          </h3>
+          <table align="center" id="table-calendar">
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Company Email</th>
+              <th>Point of Contact</th>
+            </tr>
+
+            <tr>
+              <td>Joeseph Leonard</td>
+              <td>jL12345@gmail.com</td>
+              <td><a href="#" target="_blank">www.jL12345@BT&S.com</a></td>
+              <td>Garabge Logistics</td>
+            </tr>
+
+            <tr class="alt">
+              <td>Jim Masteroni</td>
+              <td>jM12345@gmail.com</td>
+              <td><a href="#" target="_blank">www.jM12345@BT&S.com</a></td>
+              <td>Garabge Management</td>
+            </tr>
+
+            <tr>
+              <td>Ann</td>
+              <td>aL12345@gmail.com</td>
+              <td><a href="#" target="_blank">www.aL12345@BT&S.com</a></td>
+              <td>Customer Client Relations</td>
+            </tr>
+
+            <tr class="alt2">
+              <td colspan="4">
+                <center>
+                  <a style="color: lightpink" href="./index.html">©BT&S.</a>
+                </center>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
     </div>
     <nav>
-        <ul class="nav-bar">
-            <li><i class="fas fa-home "></i><a href='./index.html'>Home</a></li>
-            <li><i class="fas fa-user-alt " aria-hidden="true "></i><a href='./indexFAQ.html'>FAQ</a></li>
-            <li><i class="fa fa-hashtag " aria-hidden="true "></i><a href='./indexBronx.html'>Bronx</a></li>
-            <li><i class="fa fa-hashtag " aria-hidden="true "></i><a href='./indexBrooklyn.html'>Brooklyn</a></li>
-            <li><i class="fa fa-hashtag " aria-hidden="true "></i><a href='./indexManhatten.html'>Manhattaan</a></li>
-            <li><i class="fa fa-hashtag " aria-hidden="true "></i><a href='./indexQueens.html'>Queens</a></li>
-            <li><i class="fa fa-hashtag " aria-hidden="true "></i><a href='./indexStatenIsland.html'>Staten Island</a></li>
-            <li><i class="fa fa-hashtag " aria-hidden="true "></i><a href='./indexContactUs.html'>Contact Us</a></li>
-        </ul>
+      <ul class="nav-bar">
+        <li><i class="fas fa-home"></i><a href="./index.html">Home</a></li>
+        <li>
+          <i class="fas fa-user-alt" aria-hidden="true "></i
+          ><a href="./indexFAQ.html">FAQ</a>
+        </li>
+        <li>
+          <i class="fa fa-hashtag" aria-hidden="true "></i
+          ><a href="./indexBronx.html">Bronx</a>
+        </li>
+        <li>
+          <i class="fa fa-hashtag" aria-hidden="true "></i
+          ><a href="./indexBrooklyn.html">Brooklyn</a>
+        </li>
+        <li>
+          <i class="fa fa-hashtag" aria-hidden="true "></i
+          ><a href="./indexManhatten.html">Manhattaan</a>
+        </li>
+        <li>
+          <i class="fa fa-hashtag" aria-hidden="true "></i
+          ><a href="./indexQueens.html">Queens</a>
+        </li>
+        <li>
+          <i class="fa fa-hashtag" aria-hidden="true "></i
+          ><a href="./indexStatenIsland.html">Staten Island</a>
+        </li>
+        <li>
+          <i class="fa fa-hashtag" aria-hidden="true "></i
+          ><a href="./indexContactUs.html">Contact Us</a>
+        </li>
+      </ul>
     </nav>
-    <script src="./indexFAQ.js"></script>
-
-</body>
-
+    <script src="./indexFAQ.js "></script>
+  </body>
 </html>

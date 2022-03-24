@@ -1,264 +1,276 @@
-            /* general selectors*/
-            
-            @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
-            * {
-                box-sizing: border-box;
-            }
-            
-            body {
-                font-family: 'Ubuntu', sans-serif;
-                /*No ScrollBar Across or X-axis*/
-                overflow-x: hidden;
-                align-items: center;
-                justify-content: center;
-                height: 100vh;
-                margin: 0;
-                background-image: linear-gradient(90deg, #7d5fff, #7158e2);
-                display: flex;
-                z-index: -1;
-            }
-            /*CSS for all indexBronx.html page*/
-            
-            .background {
-                background-image: url('./assets/Bronx_1.jpg');
-                grid-column: col1-start/col7-end;
-                grid-row: row2-start/row3-end;
-                z-index: 0;
-                filter: blur(30px);
-                background-size: 100%;
-                background-position: center;
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .loading-text {
-                font-size: 50px;
-                color: white;
-                grid-column: col4-start/col5-start;
-                grid-row: row2-start/row2-end;
-                align-self: center;
-                justify-self: center;
-                z-index: 1;
-            }
-            
-            section.background div.content {
-                font-size: 2rem;
-                color: white;
-                justify-self: center;
-                align-self: center;
-            }
-            
-            section.background div.content .section-background-heading {
-                margin: 0;
-                justify-self: left;
-                padding-top: 5px;
-            }
-            
-            .section-background-heading>span {
-                border: white 2px solid;
-                background-color: black;
-            }
-            
-            section.background div.content .section-background-paragraph {
-                margin: 0;
-            }
-            
-            section.background div.content .section-background-paragraph>span {
-                background-color: black;
-            }
-            
-            span.flex-item-heading-span {
-                background-color: black;
-            }
-            
-            div.class-list {
-                font-size: 2rem;
-                color: white;
-                justify-self: center;
-                align-self: center;
-                display: flex;
-            }
-            
-            div.class-list dt span,
-            dd span {
-                background-color: black;
-            }
-            
-            div.container-all {
-                display: grid;
-                grid-template-rows: [row1-start] 10% [row1-end row2-start] 80% [row2-end row3-start] 10% [row3-end];
-                grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [col3-end col4-start] 1fr [col4-end col5-start] 1fr [col5-end col6-start] 1fr [col6-end col7-start] 1fr [col7-end];
-                transform-origin: top left;
-                transition: transform 0.5s linear;
-                row-gap: 10px;
-                background-color: lightgray;
-                width: 100vw;
-                min-height: 100vh;
-            }
-            /* search bar css */
-            
-            div.search {
-                grid-column: col6-start/col7-end;
-                position: relative;
-                align-self: center;
-            }
-            
-            div.search input.input {
-                background-color: white;
-                border: 0;
-                font-size: max(20px, 1vw);
-                height: 50px;
-                width: 70px;
-                transition: width ease .3s;
-            }
-            
-            div.search button#search-btn {
-                background-color: white;
-                border: 0;
-                cursor: pointer;
-                font-size: max(24px, 1vw);
-                top: 0;
-                left: 0;
-                height: 50px;
-                width: 70px;
-                transition: transform .3s ease;
-                /*This sets the position of our search button on top of our search input*/
-                position: absolute;
-            }
-            
-            button#search-btn:focus,
-            .input:focus {
-                outline: none;
-            }
-            
-            div.search.active .input {
-                width: 200px;
-            }
-            
-            div.search.active button#search-btn {
-                transform: translateX(205px);
-            }
-            /* header-image css */
-            
-            div.header-image {
-                background-size: 90%;
-                height: auto;
-                width: auto;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-            /*nav bar when show-nav is activated*/
-            
-            div.container-all.show-nav {
-                transform: rotate(-20deg);
-            }
-            
-            div.container-all.show-nav+nav li {
-                transform: translateX(0);
-                transition-delay: 0.3s;
-            }
-            
-            div.circle-container {
-                grid-column-start: col1-start;
-                grid-column-end: col1-end;
-                grid-row-start: row1-start;
-            }
-            
-            .circle {
-                background-color: #ff7979;
-                border-radius: 5;
-                position: relative;
-                left: -125px;
-                transition: transform 0.5s linear;
-            }
-            
-            .circle button {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                color: white;
-                font-size: 26px;
-                height: 100px;
-                background: transparent;
-                /*Take off the Border*/
-                border: 0;
-                cursor: pointer;
-            }
-            
-            .circle button:focus {
-                outline: none;
-            }
-            
-            .circle button#open {
-                left: 60%;
-            }
-            
-            .circle button#close {
-                top: 60%;
-                transform: rotate(90deg);
-                transform-origin: top left;
-            }
-            
-            .container-all.show-nav .circle button#close {
-                top: 190px;
-                transform: rotate(30deg);
-            }
-            /* Selector for Nav Bar*/
-            
-            nav {
-                position: fixed;
-                bottom: 40px;
-                left: 0px;
-                z-index: 1;
-                grid-column: col1-start/col2-start;
-                grid-row: row1-start;
-            }
-            
-            nav a {
-                text-decoration: none;
-                color: white;
-                padding-left: 5px;
-            }
-            
-            nav ul {
-                list-style-type: none;
-                padding-left: 30px;
-            }
-            
-            nav ul li {
-                text-transform: uppercase;
-                color: white;
-                margin: 30px 0;
-                transform: translateX(-100%);
-                transition: transform 0.4s ease-in;
-            }
-            
-            nav ul li i {
-                font-size: 100%;
-            }
-            
-            nav ul li+li {
-                margin-left: 15px;
-                transform: translateX(-150%);
-            }
-            
-            nav ul li+li+li {
-                margin-left: 30px;
-                transform: translateX(-200%);
-            }
-            /*Add Images to Nav Bar*/
-            
-            div#header-image-1 {
-                background-image: url("./assets/waste_4.jpg");
-                grid-column: col2-start/col4-start;
-            }
-            
-            div#header-image-2 {
-                background-image: url("./assets/waste_2.jpg");
-                grid-column: col4-start/col6-start;
-            }
-            
-            span.red {
-                color: red;
-                font: larger;
-            }
+/* general selectors*/
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    /*No ScrollBar Across or X-axis*/
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+    display: flex;
+    z-index: -1;
+}
+
+
+/*CSS for all indexBronx.html page*/
+
+.background {
+    background-image: url('./assets/Bronx_1.jpg');
+    grid-column: col1-start/col7-end;
+    grid-row: row2-start/row3-end;
+    z-index: 0;
+    filter: blur(30px);
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.loading-text {
+    font-size: 50px;
+    color: white;
+    grid-column: col4-start/col5-start;
+    grid-row: row2-start/row2-end;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+}
+
+section.background div.content {
+    font-size: 2rem;
+    color: white;
+    justify-self: center;
+    align-self: center;
+}
+
+section.background div.content .section-background-heading {
+    margin: 0;
+    justify-self: left;
+    padding-top: 5px;
+}
+
+.section-background-heading>span {
+    border: white 2px solid;
+    background-color: black;
+}
+
+section.background div.content .section-background-paragraph {
+    margin: 0;
+}
+
+section.background div.content .section-background-paragraph>span {
+    background-color: black;
+}
+
+span.flex-item-heading-span {
+    background-color: black;
+}
+
+div.class-list {
+    font-size: 2rem;
+    color: white;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+}
+
+div.class-list dt span,
+dd span {
+    background-color: black;
+}
+
+div.container-all {
+    display: grid;
+    grid-template-rows: [row1-start] 10% [row1-end row2-start] 80% [row2-end row3-start] 10% [row3-end];
+    grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [col3-end col4-start] 1fr [col4-end col5-start] 1fr [col5-end col6-start] 1fr [col6-end col7-start] 1fr [col7-end];
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    row-gap: 10px;
+    background-color: lightgray;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+
+/* search bar css */
+
+div.search {
+    grid-column: col6-start/col7-end;
+    position: relative;
+    align-self: center;
+}
+
+div.search input.input {
+    background-color: white;
+    border: 0;
+    font-size: max(20px, 1vw);
+    height: 50px;
+    width: 70px;
+    transition: width ease 0.3s;
+}
+
+div.search button#search-btn {
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+    font-size: max(24px, 1vw);
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 70px;
+    transition: transform 0.3s ease;
+    /*This sets the position of our search button on top of our search input*/
+    position: absolute;
+}
+
+button#search-btn:focus,
+.input:focus {
+    outline: none;
+}
+
+div.search.active .input {
+    width: 200px;
+}
+
+div.search.active button#search-btn {
+    transform: translateX(205px);
+}
+
+
+/* header-image css */
+
+div.header-image {
+    background-size: 90%;
+    height: auto;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*nav bar when show-nav is activated*/
+
+div.container-all.show-nav {
+    transform: rotate(-20deg);
+}
+
+div.container-all.show-nav+nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+div.circle-container {
+    grid-column-start: col1-start;
+    grid-column-end: col1-end;
+    grid-row-start: row1-start;
+}
+
+.circle {
+    background-color: #ff7979;
+    border-radius: 5;
+    position: relative;
+    left: -125px;
+    transition: transform 0.5s linear;
+}
+
+.circle button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 26px;
+    height: 100px;
+    background: transparent;
+    /*Take off the Border*/
+    border: 0;
+    cursor: pointer;
+}
+
+.circle button:focus {
+    outline: none;
+}
+
+.circle button#open {
+    left: 60%;
+}
+
+.circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.container-all.show-nav .circle button#close {
+    top: 190px;
+    transform: rotate(30deg);
+}
+
+
+/* Selector for Nav Bar*/
+
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0px;
+    z-index: 1;
+    grid-column: col1-start/col2-start;
+    grid-row: row1-start;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    color: white;
+    margin: 30px 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+    font-size: 100%;
+}
+
+nav ul li+li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+
+nav ul li+li+li {
+    margin-left: 30px;
+    transform: translateX(-200%);
+}
+
+
+/*Add Images to Nav Bar*/
+
+div#header-image-1 {
+    background-image: url('./assets/waste_4.jpg');
+    grid-column: col2-start/col4-start;
+}
+
+div#header-image-2 {
+    background-image: url('./assets/waste_2.jpg');
+    grid-column: col4-start/col6-start;
+}
+
+span.red {
+    color: red;
+    font: larger;
+}
