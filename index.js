@@ -20,6 +20,7 @@ panels.forEach((panel) => {
     })
 });
 
+/*example of hoisting*/
 function removeActiveClasses() {
     panels.forEach(panel => {
         panel.classList.remove('active')

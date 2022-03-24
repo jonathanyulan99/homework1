@@ -208,8 +208,9 @@ div.circle-container {
 }
 
 .container-all.show-nav .circle button#close {
-    top: 190px;
     transform: rotate(30deg);
+    top: 40vh;
+    left: 5vh;
 }
 
 

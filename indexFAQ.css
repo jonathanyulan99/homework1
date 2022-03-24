@@ -25,8 +25,9 @@
         grid-row: row2-start/row3-end;
         z-index: 0;
         filter: blur(30px);
-        background-size: 90vh;
+        background-size: 100%;
         background-position: center;
+        background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
     }
@@ -184,11 +185,9 @@
     
     .circle {
         background-color: #ff7979;
-        border-radius: 50%;
         position: relative;
         left: -125px;
         transition: transform 0.5s linear;
-        margin-top: 30px;
     }
     
     .circle button {
@@ -219,8 +218,9 @@
     }
     
     .container-all.show-nav .circle button#close {
-        top: 190px;
         transform: rotate(30deg);
+        top: 40vh;
+        left: 5vh;
     }
     /* Selector for Nav Bar*/
     
@@ -267,20 +267,19 @@
     }
     /*Add Images to Nav Bar*/
     
-    div.header-image#header-image-1 {
-        background-size: 300px 70px;
-        background-image: url('./assets/waste_4.jpg');
-        grid-column: col2-start/col4-start;
-        background-repeat: no-repeat;
-        margin-top: 47px;
+    h1#main-heading {
+        grid-row: row1-start/row1-end;
+        grid-column: col2-start/col6-start;
+        margin: 0;
+        font-size: 2.5rem;
+        color: #7158e2;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
     }
     
-    div.header-image#header-image-2 {
-        background-size: 300px 70px;
-        background-repeat: no-repeat;
-        background-image: url('./assets/waste_2.jpg');
-        grid-column: col4-start/col6-start;
-        margin-top: 47px;
+    h1#main-heading>span {
+        border: 10px groove #7158e2;
     }
     /*CS Selector for adding link at contact US*/
     
