@@ -144,7 +144,7 @@
         cursor: pointer;
         display: flex;
         /*cause we are using flex box we can change the width with flex*/
-        transition: flex 0.7s ease-in;
+        transition: flex 0.3s ease-in;
     }
     /* Selector for Nav Bar*/
     
@@ -234,7 +234,7 @@
         opacity: 1;
         text-decoration: underline;
         /* opacity .3s takes ease-in .4s delay*/
-        transition: opacity 0.2s ease-in;
+        transition: opacity 0.3s ease-in;
     }
     /*Selectors For Photos*/
     

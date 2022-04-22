@@ -320,10 +320,8 @@
         width: 65vw;
         border-top-left-radius: 15px 15px;
         -moz-border-radius-topleft: 15px 15px;
-        border-radius-topleft: 15px 15px;
         border-top-right-radius: 15px 15px;
         -moz-border-radius-topright: 15px 15px;
-        border-radius-topright: 15px 15px;
         font-family: Arial, Helvetica, sans-serif;
         color: #222222;
         border-collapse: collapse;
