@@ -87,6 +87,12 @@
         transition-delay: 0.3s;
     }
     
+    .container-all.show-nav .circle button#close {
+        transform: rotate(30deg);
+        top: 40vh;
+        left: 5vh;
+    }
+    
     div.circle-container {
         grid-column-start: col1-start;
         grid-column-end: col1-end;
@@ -121,12 +127,6 @@
         top: 60%;
         transform: rotate(90deg);
         transform-origin: top left;
-    }
-    
-    .container-all.show-nav .circle button#close {
-        transform: rotate(30deg);
-        top: 40vh;
-        left: 5vh;
     }
     
     .circle button:focus {
