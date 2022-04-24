@@ -22,6 +22,9 @@
     
     div.container-all {
         display: grid;
+        display: -ms-grid;
+        -ms-grid-rows: [row1-start] 15% [row1-end row2-start] 80% [row2-end row3-start] 5% [row3-end];
+        -ms-grid-column: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [col3-end col4-start] 1fr [col4-end col5-start] 1fr [col5-end col6-start] 1fr [col6-end col7-start] 1fr [col7-end];
         grid-template-rows: [row1-start] 15% [row1-end row2-start] 80% [row2-end row3-start] 5% [row3-end];
         grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [col3-end col4-start] 1fr [col4-end col5-start] 1fr [col5-end col6-start] 1fr [col6-end col7-start] 1fr [col7-end];
         transform-origin: top left;
